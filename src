@@ -1,0 +1,23 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Aula5 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("informe a quantidade de metros: ");
+	
+		DecimalFormat formato = new DecimalFormat("##");
+	
+		
+		double metro = entrada.nextDouble();
+		double resultado = metro *100;
+		
+		System.out.println("Resultado em Centimetros: " + formato.format(resultado) +"CM");
+				
+		entrada.close();
+				
+	}
+
+}
